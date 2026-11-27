@@ -71,7 +71,6 @@ A separate public phishing URL was selected from PhishTank for threat-intelligen
 | PhishTank Entry ID | `9566126` |
 | Reported URL | `https://tuilianmeng.com/` |
 | Domain | `tuilianmeng.com` |
-| Submitted By | `Josua33` |
 
 Source: https://phishtank.org/phish_detail.php?phish_id=9566126
 
@@ -186,13 +185,13 @@ MXToolbox also displayed a DMARC-related warning.
 
 AbuseIPDB reported that no abuse reports were available for this IP address.
 
-The abuse confidence score was 0%, indicating that the platform had no recent abuse reports on file.
+The abuse confidence score was 0%, and no abuse reports were listed for this IP address at the time of the lookup.
 
 A zero score does not guarantee that an IP address is safe. It only describes the information available in the AbuseIPDB database at the time of the lookup.
 
 ### Finding
 
-No reported abusive activity was found for the IP address in AbuseIPDB.
+No abuse reports were listed for this IP address in the AbuseIPDB database at the time of investigation.
 
 The IP was associated with data center/web hosting/transit infrastructure according to the displayed lookup result.
 
@@ -216,11 +215,20 @@ The results from all three platforms were compared to identify relationships bet
 
 ### Overall Assessment
 
-The URL received suspicious reputation detections from multiple VirusTotal vendors.
+The investigated URL received phishing or malicious detections from 5 out of 93 security vendors on VirusTotal.
 
-However, AbuseIPDB did not have reports identifying the associated IP as abusive.
+VirusTotal associated the URL with `95.85.244.113`, and MXToolbox independently resolved `tuilianmeng.com` to the same IP address.
 
-This demonstrates that URL reputation and IP abuse reputation are separate investigation dimensions. A suspicious URL can be flagged even when its hosting IP has no abuse reports.
+However, AbuseIPDB showed a 0% abuse confidence score and no reported abuse records for the IP at the time of investigation.
+
+These findings indicate that:
+
+- The URL has suspicious reputation signals and is listed as a phishing sample on PhishTank.
+- The domain resolves to the IP address identified during the investigation.
+- The associated IP was not independently identified as abusive by AbuseIPDB.
+- The missing DMARC record is an email-security configuration observation, not proof of malicious activity.
+
+**Final assessment:** The URL is suspicious based on the available threat-intelligence results. The associated hosting IP should remain classified as unconfirmed rather than confirmed malicious.
 
 ## 10. Investigation Summary
 
