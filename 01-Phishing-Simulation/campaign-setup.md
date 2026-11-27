@@ -58,7 +58,7 @@ Five click events were recorded during deliberate manual testing by the authoriz
 
 ## 8. Limitations
 
-- Automated link-scanner activity has not yet been ruled out.
+- Five click events were generated through deliberate manual testing. The investigation did not separately assess automated email security scanner activity.
 - Form submission tracking was verified during a subsequent controlled test using dummy values only. No real credentials were used.
 - The simulation was conducted in a controlled test environment.
 
