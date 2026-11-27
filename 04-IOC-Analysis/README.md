@@ -152,6 +152,8 @@ No indicator was classified as confirmed malicious without supporting evidence.
 
 Maintaining accurate IOC records helps security analysts investigate incidents, communicate findings, and support appropriate incident response decisions.
 
+A separate public phishing sample was also investigated. The URL and domain were classified as suspicious based on PhishTank and VirusTotal findings, while the associated IP address remained unconfirmed.
+
 ## Disclaimer
 
 This IOC register was created as part of an authorized educational phishing simulation. It documents controlled lab artifacts and does not identify confirmed malicious external infrastructure.
