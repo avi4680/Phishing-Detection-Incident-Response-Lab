@@ -45,8 +45,6 @@ The GoPhish campaign results timeline recorded:
 - Email Sent
 - Clicked Link events
 
-Five click events were visible in the observed campaign timeline.
-
 Five click events were recorded during deliberate manual testing by the authorized tester. The events were generated through repeated interactions with the tracked link.
 
 ## 7. Findings
