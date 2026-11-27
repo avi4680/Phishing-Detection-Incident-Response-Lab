@@ -47,7 +47,7 @@ Gmail's original-message analysis reported the following authentication results:
 Relevant header information:
 
 - Envelope sender domain: `gmail.com`
-- Sending server IP: `203.0.113.10` (placeholder)
+- Sending server IP: `209.85.220.65` (placeholder)
 
 SPF checks whether the sending server is authorized to send email on behalf of the envelope-sender domain.
 
