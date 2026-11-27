@@ -107,12 +107,17 @@ The project demonstrated several important cybersecurity concepts:
 
 ## Project Structure
 
-```text
 Phishing-Detection-Incident-Response-Lab/
 │
 ├── 01-Phishing-Simulation/
 │   ├── campaign-setup.md
 │   └── screenshots/
+│       ├── 01-gophish-dashboard.png
+│       ├── 02-email-template.png
+│       ├── 03-campaign-configuration.png
+│       ├── 04-test-email.png
+│       ├── 05-landing-page.png
+│       └── 06-campaign-results.png
 │
 ├── 02-Email-Analysis/
 │   └── README.md
@@ -127,7 +132,6 @@ Phishing-Detection-Incident-Response-Lab/
 │   └── README.md
 │
 └── README.md
-```
 
 ## Key Learning Outcomes
 
