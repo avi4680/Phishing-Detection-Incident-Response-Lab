@@ -30,7 +30,7 @@ The original GoPhish email and its headers contained the following indicators:
 | IP Address | `127.0.0.1` | Loopback address |
 | Tracking Parameter | `rid` | GoPhish recipient tracking identifier |
 | Sender Domain | `gmail.com` | Email sender/signing domain |
-| Sending IP | `209.85.220.65` | Google outbound mail server |
+| Google Outbound Mail Server IP | `209.85.220.65` | Google server that handled outbound email delivery |
 | Sending Application | `gophish` | Identified through X-Mailer header |
 
 Note: The tracking identifier is represented using a placeholder.
