@@ -59,7 +59,7 @@ These events confirm that tracked requests were recorded. They do not independen
 ## 8. Limitations
 
 - Automated link-scanner activity has not yet been ruled out.
-- Form submission tracking has not been verified.
+- Form submission tracking was verified during a subsequent controlled test using dummy values only. No real credentials were used.
 - The simulation was conducted in a controlled test environment.
 
 ## 9. Conclusion
