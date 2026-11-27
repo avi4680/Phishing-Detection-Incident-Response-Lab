@@ -27,8 +27,13 @@ The indicators documented in this module were obtained from:
 | IOC-005 | IP Address | `209.85.220.65` | Received header | Google outbound mail infrastructure |
 | IOC-006 | Application Identifier | `gophish` | X-Mailer header | Sending application |
 | IOC-007 | Email Subject | `Urgent: Suspicious Activity on your Microsoft Account` | Email header | Simulation content |
+| IOC-008 | URL | `https://tuilianmeng.com/` | PhishTank / VirusTotal | Reported phishing URL |
+| IOC-009 | Domain | `tuilianmeng.com` | URL analysis / MXToolbox | Suspicious domain |
+| IOC-010 | IP Address | `95.85.244.113` | VirusTotal / MXToolbox | Associated hosting IP; not confirmed malicious |
 
 **Note:** Tracking identifiers and identifying email values are represented using illustrative placeholders.
+**Public Sample Reference:** PhishTank ID `9566126`  
+**Source:** https://phishtank.org/phish_detail.php?phish_id=9566126
 
 ## 4. Indicator Analysis
 
@@ -120,20 +125,22 @@ The indicators documented in this module were obtained from:
 
 | Classification | Meaning | Investigation Result |
 |---|---|---|
-| Malicious | Confirmed harmful indicator | None confirmed |
-| Suspicious | Requires further investigation | No external indicator confirmed |
-| Benign / Infrastructure | Identified legitimate infrastructure | Gmail domain and Google mail server |
-| Local Simulation | Used within the controlled lab | GoPhish URL and tracking identifier |
+| Malicious | Confirmed harmful indicator | No external IP confirmed malicious |
+| Suspicious | Indicator with threat-intelligence warnings | `tuilianmeng.com` and its URL were reported by PhishTank and flagged by 5/93 VirusTotal vendors |
+| Unconfirmed | Indicator requiring additional validation | `95.85.244.113` — AbuseIPDB showed 0% abuse confidence |
+| Benign / Infrastructure | Identified legitimate infrastructure | Gmail domain and Google outbound mail server |
+| Local Simulation | Used within the controlled lab | GoPhish localhost URL and tracking identifier |
 | Informational | Useful investigation artifact | X-Mailer and email subject |
 
 ## 6. Investigation Limitations
 
-- No confirmed malicious public URL was identified.
-- No confirmed malicious public domain was identified.
-- No confirmed malicious IP address was identified.
-- The original landing-page URL used a localhost address.
-- Public threat-intelligence reputation results were not established in Module 3.
-- Some values are represented using illustrative placeholders.
+- The original GoPhish simulation used localhost infrastructure and does not represent a real external phishing campaign.
+- The public phishing sample was investigated using PhishTank, VirusTotal, MXToolbox, and AbuseIPDB.
+- VirusTotal detections represent vendor opinions at the time of lookup and may change.
+- AbuseIPDB's 0% abuse confidence score does not prove that an IP address is safe.
+- The association between the public phishing domain and its hosting IP does not independently establish that the IP is malicious.
+- No direct interaction with the public phishing website was performed as part of this investigation.
+- IOC classifications are based on the available evidence and should be reassessed if new intelligence becomes available.
 
 ## 7. Conclusion
 
