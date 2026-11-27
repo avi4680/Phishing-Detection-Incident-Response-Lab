@@ -107,6 +107,7 @@ The project demonstrated several important cybersecurity concepts:
 
 ## Project Structure
 
+```text
 Phishing-Detection-Incident-Response-Lab/
 │
 ├── 01-Phishing-Simulation/
@@ -132,6 +133,7 @@ Phishing-Detection-Incident-Response-Lab/
 │   └── README.md
 │
 └── README.md
+```
 
 ## Key Learning Outcomes
 
