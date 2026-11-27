@@ -60,6 +60,21 @@ The GoPhish campaign results recorded:
 
 The form-submission event involved dummy test values and did not represent a confirmed disclosure of real credentials.
 
+### Public Phishing Sample Investigation
+
+A separate public phishing sample was investigated using threat-intelligence platforms. This investigation was independent of the controlled GoPhish simulation.
+
+Key findings:
+
+- The URL `https://tuilianmeng.com/` was listed on PhishTank (ID: `9566126`).
+- VirusTotal reported detections from 5 out of 93 security vendors.
+- MXToolbox resolved the domain to `95.85.244.113` and reported no DMARC record.
+- AbuseIPDB showed a 0% abuse confidence score, with no abuse reports listed at the time of lookup.
+
+**Assessment:** The URL has suspicious phishing indicators based on PhishTank and VirusTotal findings. The associated IP address was not independently confirmed as malicious.
+
+The public website was not directly visited during this investigation.
+
 ## 5. Risk Assessment
 
 | Risk Area | Observation | Assessment |
@@ -113,11 +128,14 @@ The controlled simulation demonstrated several important security concepts:
 
 ## 8. Limitations
 
-- The exercise was performed in a controlled educational environment.
-- Only dummy credentials were submitted.
-- No real account compromise occurred.
-- No external malicious infrastructure was confirmed.
-- The simulation does not establish the effectiveness of a production email security system.
+- The GoPhish exercise was conducted in a controlled local environment using localhost infrastructure.
+- Only dummy values were submitted during the landing-page test; no real credentials were collected.
+- No real Microsoft account was targeted or compromised.
+- The public phishing sample was investigated through threat-intelligence platforms; the website was not directly accessed.
+- VirusTotal detections reflect vendor assessments at the time of lookup and may change.
+- The associated hosting IP was not confirmed malicious by AbuseIPDB.
+- The investigation was limited to the available email headers, campaign results, and threat-intelligence data.
+- No live containment or remediation of external infrastructure was performed because this was an educational investigation.
 
 ## 9. Conclusion
 
